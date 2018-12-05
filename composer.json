@@ -2,9 +2,9 @@
     "name": "force/db-doc",
     "type": "library",
     "require": {
-        "symfony/http-kernel": "^4.2",
-        "symfony/config": "^4.2",
-        "symfony/dependency-injection": "^4.2"
+        "symfony/http-kernel": "^4.0@dev",
+        "symfony/config": "^4.0@dev",
+        "symfony/dependency-injection": "^4.0@dev"
     },
     "license": "MIT",
     "minimum-stability" :"dev",
