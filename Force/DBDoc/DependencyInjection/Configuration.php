@@ -2,6 +2,7 @@
 namespace Force\DBDoc\DependencyInjection;
 
 use Symfony\Component\Config\Definition\ConfigurationInterface;
+use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 
 class Configuration implements ConfigurationInterface
 {
@@ -16,6 +17,7 @@ class Configuration implements ConfigurationInterface
                     ->isRequired()
                 ->end()
             ->end();
+        return $builder;
     }
 }
 
