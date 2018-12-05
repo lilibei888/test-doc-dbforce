@@ -1,0 +1,21 @@
+<?php
+namespace Force\DBDoc\DependencyInjection;
+
+use Symfony\Component\Config\Definition\ConfigurationInterface;
+
+class Configuration implements ConfigurationInterface
+{
+
+    public function getConfigTreeBuilder()
+    {
+        $builder = new TreeBuilder('force_db_doc');
+        
+        $root = $builder->root('force_db_doc');
+        $root->children()
+                ->scalarNode('return_content')
+                    ->isRequired()
+                ->end()
+            ->end();
+    }
+}
+
